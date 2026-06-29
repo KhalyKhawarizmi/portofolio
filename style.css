@@ -1,0 +1,215 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#0f172a;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+position:fixed;
+width:100%;
+background:#0f172a;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 10%;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin:20px 0;
+line-height:1.7;
+}
+
+.hero-image img{
+width:320px;
+border-radius:50%;
+border:5px solid #38bdf8;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+font-size:40px;
+}
+
+.skill-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill-grid div{
+background:#1e293b;
+padding:20px;
+text-align:center;
+border-radius:10px;
+transition:.3s;
+}
+
+.skill-grid div:hover{
+background:#38bdf8;
+color:black;
+transform:translateY(-10px);
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+}
+
+.card h3,
+.card p,
+.card a{
+padding:15px;
+display:block;
+}
+
+.card a{
+text-decoration:none;
+color:#38bdf8;
+}
+
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,
+textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+}
+
+button{
+padding:15px;
+background:#38bdf8;
+border:none;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+padding:40px;
+text-align:center;
+}
+
+.social{
+margin-bottom:20px;
+}
+
+.social a{
+font-size:30px;
+margin:0 15px;
+color:#38bdf8;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+align-items:center;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-image img{
+width:220px;
+margin-bottom:30px;
+}
+
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all .8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
